@@ -18,7 +18,7 @@ data "aws_ami" "devops" {           #sess-46
     }
 }
 
-data "aws_ssm_parameter" "sg_id" {             #ses-46
+data "aws_ssm_parameter" "sg_id" {              #ses-46
   name = "/${var.project_name}/${var.environment}/${var.component}_sg_id"
 }
 
